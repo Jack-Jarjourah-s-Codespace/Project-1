@@ -1,13 +1,15 @@
+
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(240, 240, 240);
+  background-image: url("../media/stickerbomb.jpg");
+  background-size: cover;
+  background-repeat: repeat; 
   margin: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-
 #content {
   width: 80%;
   padding: 10%;
