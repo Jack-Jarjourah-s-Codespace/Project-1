@@ -21,7 +21,7 @@ form {
   border-radius: 10px;
   box-shadow: 10px 10px 10px 10px rgba(5, 5, 5, 0.253);
   display:flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   flex-direction: column;
 }
@@ -73,4 +73,24 @@ input[type="email"] {
 }
 
 input[type="input-age-verification"] {
+  color: #FF0000;
 }
+
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+}
+
+form h1, form p {
+  grid-column: 1;
+  width: 40%;
+  text-wrap: normal;
+}
+ol {
+  grid-column: 1;
+}
+#IceBearLogo {
+  grid-column: 2;
+}
+
