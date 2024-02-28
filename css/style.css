@@ -1,9 +1,8 @@
-
 body {
   font-family: Permanent Marker, Amatic SC;
   background-image: url("../media/stickerbomb.jpg");
   background-size: cover;
-  background-repeat: repeat; 
+  background-repeat: repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,7 +65,16 @@ input[type="email"] {
 
 .rainbow_text {
   font-weight: bold;
-  background-image: linear-gradient(45deg, #FF0000, #df6f00, #eeee07, #006d00, #0202cc, #39035f, #8b69a8);
+  background-image: linear-gradient(
+    45deg,
+    #ff0000,
+    #df6f00,
+    #eeee07,
+    #006d00,
+    #0202cc,
+    #39035f,
+    #8b69a8
+  );
   background-size: 1400% 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -74,28 +82,35 @@ input[type="email"] {
   animation: rainbow 25s linear infinite;
 }
 
-
-
 input[type="submit"] {
   width: 90%;
   padding: 10px;
   border-radius: 100px;
   border-color: black;
   margin-bottom: 2%;
-  background-image: linear-gradient(45deg, #FF0000, #df6f00, #eeee07, #006d00, #0202cc, #39035f, #8b69a8);
+  background-image: linear-gradient(
+    45deg,
+    #ff0000,
+    #df6f00,
+    #eeee07,
+    #006d00,
+    #0202cc,
+    #39035f,
+    #8b69a8
+  );
   color: #ffffff;
   background-size: 1400% 100%;
   font-weight: bold;
-  cursor:grab;
+  cursor: grab;
   transition: 0.3s;
   animation: rainbow 25s linear infinite;
 }
 
-
-form h1, form p {
+form h1,
+form p {
   grid-column-start: 1;
   grid-column-end: 2;
-  text-wrap: normal;
+  text-wrap:nowrap;
 }
 ol {
   grid-column-start: 2;
@@ -106,26 +121,25 @@ ol {
   grid-column-end: 4;
 }
 
-#input-age-verification {
+#inputbox {
   display: flex;
   align-items: center;
-  font-size: small; 
+  font-size: small;
 }
-#input-age-verification input {
+#inputbox input {
   margin-right: 10px;
   width: 3em;
   height: 3rem;
   accent-color: #ff0000;
-  cursor:pointer;
+  cursor: pointer;
 }
-input[type="email"]:focus, input[type="email"], input[type="submit"]:focus {
-    border-color: #ff0000;
-    box-shadow: 0 10 10px #ff0000;
-    font-family:Amatic SC;
-    font-weight:bolder;
-    outline-offset: 0px;
-    outline:none;
-  }
-
-
-
+input[type="email"]:focus,
+input[type="email"],
+input[type="submit"]:focus {
+  border-color: #ff0000;
+  box-shadow: 0 1px 10px #ff0000;
+  font-family: Amatic SC;
+  font-weight: bolder;
+  outline-offset: 0px;
+  outline: none;
+}

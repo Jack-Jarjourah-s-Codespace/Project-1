@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" class="nojs">
-<head>
-  <title>HTML Form Elements</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" />
-  <link rel="stylesheet" media="screen" href="css/meyers_and_normalize-form_reset.css" />
-  <link rel="stylesheet" media="screen" href="css/screen.css" />
-  <link rel="stylesheet" media="screen" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Bangers|Permanent+Marker|Amatic+SC" rel="stylesheet">
-</head>
-<body>
-<main id="content">
-  <form method="get" action="#null">
-    <h1 class="rainbow_text">ICE BEAR'S STICKER BOMB EMPORIUM</h1>
-    <p>
-      Register for our newsletter to receive the latest updates on new sticker designs and special offers!
-    </p>
-    <ol>
-      <li id="input-email">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" pattern="^.+@.+$" />
-      </li>
-      <li id="input-age-verification">
-        <input type="checkbox" id="input-age-verification">
-        <label for="signup">I'd like to recieve special Ice Bear offers and promotions</label>
-      </li>
-      <li id="input-submit">
-        <input type="submit" name="submit" id="submit" value="Subscribe" />
-      </li>
-    </ol>
-    <img id="IceBearLogo" src="media/icy.png" alt="Logo of ice bear to be placed next to sign up">
-  </form>
-</main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/site.js"></script>
-</body>
+  <head>
+    <title>HTML Form Elements</title>
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="css/meyers_and_normalize-form_reset.css"
+    />
+    <link rel="stylesheet" media="screen" href="css/screen.css">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Bangers|Permanent+Marker|Amatic+SC"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC"
+      rel="stylesheet">
+  </head>
+  <body>
+    <main id="content">
+      <form method="get" action="#null">
+        <h1 class="rainbow_text">ICE BEAR'S STICKER BOMB EMPORIUM</h1>
+        <p>
+          Register for our newsletter to receive the latest updates on new
+          sticker designs and special offers!
+        </p>
+        <ol>
+          <li id="input-email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" pattern="^.+@.+$">
+          </li>
+          <li id="inputbox">
+            <input type="checkbox" id="inputcheckbox">
+            <label for="inputcheckbox"
+              >I'd like to recieve special Ice Bear offers and promotions</label
+            >
+          </li>
+          <li id="input-submit">
+            <input type="submit" name="submit" id="submit" value="Subscribe">
+          </li>
+        </ol>
+        <img
+          id="IceBearLogo"
+          src="media/icy.png"
+          alt="Logo of ice bear to be placed next to sign up">
+      </form>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/site.js"></script>
+  </body>
 </html>
