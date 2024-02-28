@@ -4,7 +4,6 @@ body {
   background-image: url("../media/stickerbomb.jpg");
   background-size: cover;
   background-repeat: repeat; 
-  margin: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +16,7 @@ body {
 
 form {
   background-color: #fdfdfd;
-  opacity: 0.95;
+  opacity: 0.96;
   padding: 5%;
   border-radius: 10px;
   box-shadow: 10px 10px 10px 10px rgba(5, 5, 5, 0.253);
@@ -30,13 +29,18 @@ form {
 form h1 {
   text-align: center;
   font-size: larger;
-  color: #333;
+  /* Learnt this from: https://kinsta.com/blog/css-text-outline/ */
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
   margin-bottom: 5%;
 }
 
 form p {
   text-align: center;
-  color: #1d1d1d;
+  color: #ffffff;
+  /* Learnt this from: https://kinsta.com/blog/css-text-outline/ */
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
   margin-bottom: 2%;
 }
 
@@ -59,9 +63,8 @@ input[type="email"] {
 }
 
 .rainbow_text {
-  font-size: 30px;
   font-weight: bold;
-  background-image: linear-gradient(45deg, #FF0000, #964b00, #a1a100, #006d00, #000094, #4B0082, #634f74);
+  background-image: linear-gradient(45deg, #FF0000, #df6f00, #eeee07, #006d00, #0202cc, #39035f, #8b69a8);
   background-size: 1400% 100%;
   background-clip: text;
   -webkit-background-clip: text;
