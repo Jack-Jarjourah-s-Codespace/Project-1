@@ -110,7 +110,6 @@ form h1,
 form p {
   grid-column-start: 1;
   grid-column-end: 2;
-  text-wrap:nowrap;
 }
 ol {
   grid-column-start: 2;
