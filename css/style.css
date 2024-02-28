@@ -1,6 +1,6 @@
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Permanent Marker, Amatic SC;
   background-image: url("../media/stickerbomb.jpg");
   background-size: cover;
   background-repeat: repeat; 
@@ -16,7 +16,8 @@ body {
 }
 
 form {
-  background-color: #d6d6d6;
+  background-color: #fdfdfd;
+  opacity: 0.95;
   padding: 5%;
   border-radius: 10px;
   box-shadow: 10px 10px 10px 10px rgba(5, 5, 5, 0.253);
@@ -44,6 +45,28 @@ input[type="email"] {
   padding: 10px;
   border-radius: 2%;
   margin-bottom: 2%;
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.rainbow_text {
+  font-size: 30px;
+  font-weight: bold;
+  background-image: linear-gradient(45deg, #FF0000, #964b00, #a1a100, #006d00, #000094, #4B0082, #634f74);
+  background-size: 1400% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow 25s linear infinite;
 }
 
 input[type="input-age-verification"] {
