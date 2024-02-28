@@ -15,15 +15,16 @@ body {
 }
 
 form {
-  background-color: #fdfdfd;
-  opacity: 0.96;
+  background-color: RGBA(255, 255, 255, 0.95);
   padding: 5%;
   border-radius: 10px;
   box-shadow: 10px 10px 10px 10px rgba(5, 5, 5, 0.253);
-  display:flex;
   justify-content: left;
   align-items: center;
-  flex-direction: column;
+  display: grid;
+  place-items: inherit;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5%;
 }
 
 form h1 {
@@ -50,6 +51,7 @@ input[type="email"] {
   border-radius: 2%;
   margin-bottom: 2%;
 }
+
 @keyframes rainbow {
   0% {
     background-position: 0% 50%;
@@ -72,25 +74,58 @@ input[type="email"] {
   animation: rainbow 25s linear infinite;
 }
 
-input[type="input-age-verification"] {
-  color: #FF0000;
+
+
+input[type="submit"] {
+  width: 90%;
+  padding: 10px;
+  border-radius: 100px;
+  border-color: black;
+  margin-bottom: 2%;
+  background-image: linear-gradient(45deg, #FF0000, #df6f00, #eeee07, #006d00, #0202cc, #39035f, #8b69a8);
+  color: #ffffff;
+  background-size: 1400% 100%;
+  font-weight: bold;
+  cursor:grab;
+  transition: 0.3s;
+  animation: rainbow 25s linear infinite;
 }
 
-form {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 20px;
-}
 
 form h1, form p {
-  grid-column: 1;
-  width: 40%;
+  grid-column-start: 1;
+  grid-column-end: 2;
   text-wrap: normal;
 }
 ol {
-  grid-column: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 #IceBearLogo {
-  grid-column: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
+
+#input-age-verification {
+  display: flex;
+  align-items: center;
+  font-size: small; 
+}
+#input-age-verification input {
+  margin-right: 10px;
+  width: 3em;
+  height: 3rem;
+  accent-color: #ff0000;
+  cursor:pointer;
+}
+input[type="email"]:focus, input[type="email"], input[type="submit"]:focus {
+    border-color: #ff0000;
+    box-shadow: 0 10 10px #ff0000;
+    font-family:Amatic SC;
+    font-weight:bolder;
+    outline-offset: 0px;
+    outline:none;
+  }
+
+
 
