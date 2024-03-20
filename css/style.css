@@ -144,11 +144,18 @@ input[type="submit"]:focus {
   outline: none;  
 }
 @media (max-width: 900px) {
-  form {
-    justify-content: center;
-    align-items: center;
+  body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  #content {
+    width: 100%;
+    padding: 5%;
+  }
+  form {
+    grid-template-columns: 1fr;
+    grid-gap: 2%;
   }
   ol {
     grid-column-start: 1;
