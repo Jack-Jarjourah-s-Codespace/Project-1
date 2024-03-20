@@ -144,7 +144,7 @@ input[type="submit"]:focus {
   outline: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   form {
     justify-content: center;
     align-items: center;
