@@ -141,7 +141,7 @@ input[type="submit"]:focus {
   font-family: Amatic SC;
   font-weight: bolder;
   outline-offset: 0px;
-  outline: none;  
+  outline: none;
 }
 @media (max-width: 900px) {
   body {
@@ -165,5 +165,15 @@ input[type="submit"]:focus {
     grid-column-start: 1;
     grid-column-end: 1;
   }
+  input[type="email"]:focus,
+  input[type="email"],
+  input[type="submit"]:focus {
+    width: 90%;
+  }
+  #inputbox {
+    width: 90%;
+  }
+  #inputbox input {
+    width: 10%;
+  }
 }
-
