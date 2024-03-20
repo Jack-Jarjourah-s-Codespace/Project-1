@@ -143,3 +143,13 @@ input[type="submit"]:focus {
   outline-offset: 0px;
   outline: none;
 }
+
+@media screen and (max-width: 600px) {
+  form {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
