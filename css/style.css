@@ -141,14 +141,22 @@ input[type="submit"]:focus {
   font-family: Amatic SC;
   font-weight: bolder;
   outline-offset: 0px;
-  outline: none;
+  outline: none;  
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
   form {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
+  }
+  ol {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  #IceBearLogo {
+    grid-column-start: 1;
+    grid-column-end: 1;
   }
 }
 
